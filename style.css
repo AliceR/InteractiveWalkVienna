@@ -1,0 +1,312 @@
+/* all styles should be copied in their respective section */
+
+#borderPath {
+    stroke: black;
+    stroke-width: 3;
+    fill: none;
+}
+
+/* basemap style */
+
+.buildings {
+   fill: #D9C5CC;
+}
+
+.water{
+    fill:#57A5CF;
+}
+
+.green {
+    fill:#89B53E;
+}
+
+
+/* poi style */
+.poi {
+    fill: #6E0DBD;
+    stroke: #6E0DBD;
+    stroke-width: 4;
+}
+
+.poi.active {
+    fill: orange;
+    stroke: orange;
+    stroke-width: 6;
+}
+
+.poi:hover {
+    stroke-width: 9;
+    fill: orange;
+    stroke: orange;
+}
+
+.label.active {
+    fill:white;
+}
+
+.label {
+    fill:white;
+    font-size: 8px;
+    font-family: Trebuchet MS;
+    text-align: left;
+    text-anchor: middle;
+}
+
+.label:hover {
+    font-size: 12px;                /*why it does not work?*/
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    min-height: 20px;
+    padding: 4px;
+    font: 15px sans-serif;
+    background: aliceblue; 
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* walk style */
+.walk{
+    stroke: #6E0DBD;
+    fill:none;
+    stroke-width: 2;
+}
+
+
+
+
+/* page style */
+
+body {
+    background-image: url(grafiti4.jpg);
+    background-size: 100% auto;
+}
+
+@font-face{
+    font-family: Vienna;
+    src: url('kshandwrt.ttf');
+}
+
+h1 {
+    font-family: Vienna;
+    font-size: 55px;
+    color: #5E401C;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 40px;
+    color: white;
+    text-shadow: -2px 0 #2E2E2E, 0 2px #2E2E2E, 6px 0 #212121, 0 -2px #2E2E2E;
+}
+
+
+h2 {
+    font-family: Vienna;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #9AD92E;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+}
+
+.canvas {
+    position: relative;
+    margin-left: 40px;
+    top: 0px;
+    float: left;
+    background-color: white;
+    visibility: visible;
+}
+
+@-webkit-keyframes map
+{
+0%   {visibility: visible; opacity: 1}
+100% {visibility: hidden; opacity: 0}
+}
+
+.map {
+    position: relative;
+    left: 270px;
+    top: -20px;
+    color: white;
+    text-align: center;
+    font-family: Trebuchet MS;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    font-size: 15px;
+    cursor: pointer;
+}
+.map:after {
+    position: relative;
+    left: -20px;
+    display: block;
+    padding: 10px 0;
+    width: 100px;
+    border: 1px solid #76011b;
+    border-radius: 500px;
+    background: linear-gradient(to bottom,rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+    box-shadow: 0px 0px 10px rgba(19,93,158,.6);
+    content: "Hide map";
+}
+.map:checked:after {
+    background: linear-gradient(to bottom,rgba(109,0,25,1) 0%,rgba(143,2,34,1) 61%,rgba(169,3,41,1) 100%);
+    content: "Show map";
+}
+
+.map:checked ~ .canvas {
+    -webkit-animation: map 1s forwards;
+}
+
+.textfield {
+    position: relative;
+    left: 390px;
+    top: -20px;
+    color: white;
+    text-align: center;
+    font-family: Trebuchet MS;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.textfield:after {
+    position: relative;
+    left: -20px;
+    display: block;
+    padding: 10px 0;
+    width: 100px;
+    border: 1px solid #76011b;
+    border-radius: 500px;
+    background: linear-gradient(to bottom,rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+    box-shadow: 0px 0px 10px rgba(19,93,158,.6);
+    content: "More info";
+}
+
+.textfield:checked:after {
+    background: linear-gradient(to bottom,rgba(109,0,25,1) 0%,rgba(143,2,34,1) 61%,rgba(169,3,41,1) 100%);
+    content: "Less info";
+}
+
+.textfield:checked ~ .text_container {
+    -webkit-animation: info 1s forwards;
+}
+
+@-webkit-keyframes info
+{
+0%   {visibility: hidden; opacity: 0}
+100% {visibility: visible; opacity: 1}
+}
+
+.text_container {
+    padding: 10px;
+    position: relative;
+    left: 40px;
+    width: 500px;
+    background: linear-gradient(to bottom, #BDAE91 0%,#937E52 100%);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #20201E;
+    border-width: 2px;
+    margin: 25px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#description {
+    min-height: 100px;
+}
+
+#about {
+    height: 100px;
+}
+
+.text{
+    width: 300px;
+    float: left;
+}
+
+.cover {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: right;
+}
+
+
+
+
+/* http://www.cssbuttongenerator.com/ */
+.btn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #d197fe;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #d197fe;
+    box-shadow:inset 0px 1px 0px 0px #d197fe;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a53df6), color-stop(1, #7c16cb) );
+    background:-moz-linear-gradient( center top, #a53df6 5%, #7c16cb 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a53df6', endColorstr='#7c16cb');
+    background-color:#a53df6;
+    -webkit-border-top-left-radius:42px;
+    -moz-border-radius-topleft:42px;
+    border-top-left-radius:42px;
+    -webkit-border-top-right-radius:42px;
+    -moz-border-radius-topright:42px;
+    border-top-right-radius:42px;
+    -webkit-border-bottom-right-radius:42px;
+    -moz-border-radius-bottomright:42px;
+    border-bottom-right-radius:42px;
+    -webkit-border-bottom-left-radius:42px;
+    -moz-border-radius-bottomleft:42px;
+    border-bottom-left-radius:42px;
+    text-indent:0px;
+    border:1px solid #9c33ed;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:34px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:40px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #7d15cd;
+}
+.btn:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7c16cb), color-stop(1, #a53df6) );
+    background:-moz-linear-gradient( center top, #7c16cb 5%, #a53df6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c16cb', endColorstr='#a53df6');
+    background-color:#7c16cb;
+}
+.btn:active {
+    position:relative;
+    top:1px;
+}
+/* http://www.cssbuttongenerator.com/ */
+
+#footer {
+    position: absolute;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    top: 740px;
+    right: 350px;
+    text-align: right;
+}
+
+p {
+    font-family: Trebuchet MS;
+    font-size: 15;
+}

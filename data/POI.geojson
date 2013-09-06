@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "Id": 0, "name": "A", "title":"The massive RINGSTRASSE in front of you is built on the former city ramparts and fortifies the first district - back then with stones, now with cars. By the way, despite the very diverse architecture, all the monumental buildings around the Ring are from the same period end of 19th century.To your left you’ll see the two biggest museums of Vienna. The MUSEUM OF ART HISTORY hosts one of the biggest art collections in the world. If you are into big fossil spiders, 2m long tapeworms that once lived in humans or the biggest collection of meteoroids., then the MUSEUM OF NATURAL HISTORY is for you. In any case you should bring enough time to loose yourself. Across the street lies the impressive HELDENPLATZ (Heroe’s square). If you are too lazy to walk, just gaze at all monuments around Ringstrasse from here." }, "geometry": { "type": "Point", "coordinates": [ 16.361963419547468, 48.205202530939673 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "Id": 0, "name": "B", "title": "Through the passage and past the Spanish horse riding school, at MICHAELERPLATZ you’ll encounter the ruins of the Roman legion Vindobona, the origin of Vienna." }, "geometry": { "type": "Point", "coordinates": [ 16.366746136169187, 48.208129267976851 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "Id": 0, "name": "C" , "title": "Along the romantic winding path in VOLKSGARTEN you arrive on Ringstrasse again and stare at the PARLIAMENT. The placement of the Pallas Athena, the goddess of wisdom, has been the subject of mockery: Turning her back to the building could only mean that wisdom is not dwelling in the parliament."}, "geometry": { "type": "Point", "coordinates": [ 16.359928980387483, 48.207879424571239 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "Id": 0, "name": "F", "title": "The Neo-Gothic VOTIVKIRCHE in front of you was built as a memorial to the attempted assassination of Emperor Franz Joseph I. At the park across the church students are hanging out in deck chairs and sip coffee from the KAFFEEKÜCHE at the underground tram station across the street." }, "geometry": { "type": "Point", "coordinates": [ 16.358037308887848, 48.215910105465916 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "Id": 0, "name": "D", "title": "Pass by the BURGTHEATER on your right and the CITY HALL on your left." }, "geometry": { "type": "Point", "coordinates": [ 16.358465611868898, 48.210699085863148 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "Id": 0, "name": "E", "title": "If you need a rest from all the cars and noise, you might want to check out the MAIN UNIVERSITY. In the cloister-like, calm and intellectually inspiring courtyard you can have a chat with students or simply relax in one of the deck chairs." }, "geometry": { "type": "Point", "coordinates": [ 16.359036682510297, 48.213233211834357 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "Id": 0, "name": "G", "title": "In BERGGASSE lies the former home and now museum (for hardcore fans) of the inventor of psychoanalysis Sigmund Freud." }, "geometry": { "type": "Point", "coordinates": [ 16.361711004037659, 48.21805092177496 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "Id": 0, "name": "H", "title": "Wandering through Servitengasse to the SERVITENPLATZ makes you wonder about the cosy village-like atmosphere in the bourgeois 9th district. Around here are many small shops, bars, and restaurants, like SUPPENWIRTSCHAFT (Servitengasse 6)." }, "geometry": { "type": "Point", "coordinates": [ 16.364281202976432, 48.220711303132639 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "Id": 0, "name": "I", "title": "Down at the DANUBE CANAL enjoy the waterfront, graffiti art and people flaneuring or taking a bike ride." }, "geometry": { "type": "Point", "coordinates": [ 16.368452139850753, 48.219809478943596 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "Id": 0, "name": "J", "title": "Up again at MORZINPLATZ/SCHWEDENPLATZ the memorial reminds you of the Hotel Metropol that was located here and was used by the Gestapo as their headquarters and prison. Go up the stairs and pass by the RUPRECHTSKIRCHE, which is the oldest church in Vienna (built in 740). Turn right into Sterngasse and go towards the JUDENPLATZ, the former centre of the Jewish community. Nowadays a memorial commemorates the displacement of all the Jewish residents in 1421 and the Holocaust." }, "geometry": { "type": "Point", "coordinates": [ 16.374674726755146, 48.212955615106871 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "Id": 0, "name": "K", "title": "Exhausted from the heavy history, just let yourself float through one of the world’s most exclusive streets: GRABEN. Already back in the Middle Ages people were promenading here, among them the so called ‘Grabennymphs’ who were looking for the customers. If you have to take a leak, you are privileged to do that now in the world’s oldest ART-NOUVEAU UNDERGROUND TOILET, built by the famous Viennese architect Adolf Loos." }, "geometry": { "type": "Point", "coordinates": [ 16.368655050293288, 48.209461046374329 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "Id": 0, "name": "L", "title": "At last you arrive at the STEFL, which is how we lovingly call Vienna’s landmark and the most impressive Gothic Church, the Stephansdom (dating back to 1137). According to the legend a whole year’s wine harvest had been used as a mortar binder for the never finished north tower. What a waste!" }, "geometry": { "type": "Point", "coordinates": [ 16.37178888935021, 48.207973036462413 ] } }
+
+]
+}
