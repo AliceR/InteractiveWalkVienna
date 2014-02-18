@@ -9,7 +9,6 @@
 	<script src="http://d3js.org/topojson.v0.min.js"></script>
 	
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 
     <!-- include all external script files -->
     <script type="text/javascript" src="script.js"></script>
@@ -17,64 +16,62 @@
 </head>
 
 <body>
-    <h1 class="rainbow">Too much history walk</h1>
-    <h2>in Vienna</h2>
-    <input class="map" type="checkbox">
-    <input class= "textfield" type="checkbox">
-
-	<!-- set up the main map container (parameters) and call the external functions -->
-	<script>
+    <header>
+        <h1>Too much history walk in Vienna</h1>
+    </header>
+    <!-- set up the main map container (parameters) and call the external functions -->
+    <script>
     "use strict";
 
     // define variables
-	var margin = {top: 0, right: 0, bottom: 0, left: 0}, // we might need that later? to embed in our framework
-        width = 700,
-        height = 550;
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    width = 700,
+    height = 550;
 
     var centered;
 
     // define projection parameters
-	var projection = d3.geo.mercator()
-			.center([16.385, 48.215])
-    		.scale(600000)
-    		.rotate([0,0]);
+    var projection = d3.geo.mercator()
+    .center([16.385, 48.215])
+    .scale(600000)
+    .rotate([0,0]);
 
     // create svg canvas to draw map on
     var svg = d3.select("body").append("svg")
-		.attr("width", width)
-		.attr("height", height)
-        .attr("border", 3)
-        .attr("class", "canvas");
+    .attr("width", width)
+    .attr("height", height)
+    .attr("border", 3)
+    .attr("class", "canvas");
 
     // create path object 
     var path = d3.geo.path().projection(projection);
 
     // create group object g
-	var g = svg.append("g");
+    var g = svg.append("g");
 
     // create div object to use for dynamic tooltip
     var div = d3.select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
     // call map function
     drawmap();
     
     // zoom functionality parameters
     var zoom = d3.behavior.zoom()
-        .translate([0, 0])
-        .scale(1)
-        .scaleExtent([1, 8])
-        .on("zoom", zoomed); // the function zoomed is defined in script.js
+    .translate([0, 0])
+    .scale(1)
+    .scaleExtent([1, 8])
+    .on("zoom", zoomed); 
+    // the function zoomed is defined in script.js
 
     svg.call(zoom)
 
+    </script>
 
-	</script>
-
-    <div class="text_container" id="about">
-        <h3>Too much history walk in Vienna</h3>
+    <div class="text_container">
+        
         <div>
             <div class="text">
                 <p>Information used in this map was taken from <a href="http://www.jugendinfowien.at/useit/">USE-IT Vienna</a> map.</p>
@@ -87,7 +84,7 @@
     </div>
 
 
-    <div id="footer">&#169; Alice R&#252;hl and Mariana Danielov&#225, August 2013</div>
+    <footer>&#169; Alice R&#252;hl and Mariana Danielov&#225, August 2013</footer>
 </body>
 
 </html>
