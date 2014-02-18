@@ -76,14 +76,12 @@ div.tooltip {
     stroke-width: 2;
 }
 
-
-
-
 /* page style */
 
 body {
-    background-image: url(grafiti4.jpg);
+    background-image: url('img/grafiti4.jpg');
     background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 @font-face{
@@ -92,7 +90,7 @@ body {
 }
 
 h1 {
-    font-family: Vienna;
+    font-family: Frijole, cursive;
     font-size: 55px;
     color: #5E401C;
     text-align: left;
@@ -105,7 +103,7 @@ h1 {
 
 
 h2 {
-    font-family: Vienna;
+    font-family: Frijole, cursive;
     font-size: 25px;
     font-weight: lighter;
     color: #9AD92E;
@@ -213,7 +211,7 @@ h3 {
     padding: 10px;
     position: relative;
     left: 40px;
-    width: 500px;
+    width: 400px;
     background: linear-gradient(to bottom, #BDAE91 0%,#937E52 100%);
     border-radius: 15px;
     border-style: solid;

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- this is a comment, only to test git functionality-->
 <html>
 
 <head>
@@ -10,6 +9,7 @@
 	<script src="http://d3js.org/topojson.v0.min.js"></script>
 	
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 
     <!-- include all external script files -->
     <script type="text/javascript" src="script.js"></script>
@@ -58,11 +58,8 @@
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-
-
     // call map function
     drawmap();
-
     
     // zoom functionality parameters
     var zoom = d3.behavior.zoom()
@@ -75,15 +72,6 @@
 
 
 	</script>
-
-
-    <div class="text_container" id="description">
-        <button type="button" class="btn back" onclick="clicked();" ><</button>
-        <button type="button" class="btn next">></button>
-        <h3>Description</h3>
-    </div>
-
-    <!--We could put some text about our project and use it here...--> 
 
     <div class="text_container" id="about">
         <h3>Too much history walk in Vienna</h3>
