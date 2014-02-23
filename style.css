@@ -17,8 +17,6 @@ footer {
 
 .canvas {
     float: left;
-    width: 700px;
-    height: 500px;
     border: 1px black solid;
 }
 
@@ -28,17 +26,16 @@ footer {
 }
 
 .text{
-    width: 400px;
-
+    float: left;
+    width: 250px;
 }
 
 .cover {
-    float: right;
     padding: 10px;
 }
 
 .description {
-    height: 80px;
+    width: 400px;
     background-color: aliceblue;
 }
 

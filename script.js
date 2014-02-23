@@ -1,8 +1,14 @@
 "use strict";
 
+// canvas properties
+var width = 700;
+var height = 500;
+
 // create svg canvas to draw map on
 var svg = d3.select("div.container").append("svg")
-.attr("class", "canvas");
+.attr("class", "canvas")
+.attr("width", width)
+.attr("height", height);
 
 // create group object g
 var g = svg.append("g");
@@ -139,13 +145,9 @@ function clicked(d) {
     .attr("transform","translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
     .style("stroke-width", 1.5 / k + "px");
 
-    // write the desciption in the text container    
-    var description = d3.select("div.description").selectAll("p")
-    g.append("g")
-    .data(data.features)
-    .enter()
-    .append("p")
-    .text(function(d) { return d.properties.name; });
+    // write the desciption in the text container
+    var description = d3.select("div.description").selectAll("p")  
+    .text(d.properties.name + ": " + d.properties.title);
 }
 
 // zoom functionality parameters
