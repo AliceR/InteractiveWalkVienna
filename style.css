@@ -1,9 +1,49 @@
-/* all styles should be copied in their respective section */
+/* page style */
 
-#borderPath {
-    stroke: black;
-    stroke-width: 3;
-    fill: none;
+body {
+    font-family: Trebuchet MS;
+}
+
+header {
+    padding: 30px;
+}
+footer {
+    padding: 30px;
+} 
+
+.container {
+    padding: 30px;
+}
+
+.canvas {
+    float: left;
+    width: 700px;
+    height: 500px;
+    border: 1px black solid;
+}
+
+.text_container {
+    float: right;
+    margin: 1px;
+}
+
+.text{
+    width: 400px;
+
+}
+
+.cover {
+    float: right;
+    padding: 10px;
+}
+
+.description {
+    height: 80px;
+    background-color: aliceblue;
+}
+
+.clear {
+    clear: both;
 }
 
 /* basemap style */
@@ -76,23 +116,8 @@ div.tooltip {
     stroke-width: 2;
 }
 
-/* page style */
-
-body {
-    font-family: Trebuchet MS;
-    padding: 20px;
+#borderPath {
+    stroke: black;
+    stroke-width: 3;
+    fill: none;
 }
-
-.text_container {
-    float: right;
-}
-
-.text{
-    width: 300px;
-    float: left;
-}
-
-.cover {
-    float: right;
-}
-
